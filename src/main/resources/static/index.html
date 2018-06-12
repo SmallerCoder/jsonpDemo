@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>测试跨域访问</title>
+<meta charset="utf-8" />
+</head>
+<body>
+	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		var callbackFunction = function(data) {
+			alert('接口返回的数据是：' + JSON.stringify(data));
+		};
+	</script>
+	<script type="text/javascript" src="http://wokao666.club/hello/map/getUser.json?callbackName=callbackFunction"></script>
+</body>
+</html>
